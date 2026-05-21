@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AuthMatrix Studio</title>
+<style>
+*{box-sizing:border-box}body{margin:0;color:#f7fbff;font-family:Inter,-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;background:radial-gradient(circle at 8% -8%,rgba(103,232,249,.18),transparent 28rem),radial-gradient(circle at 92% 0,rgba(196,181,253,.16),transparent 24rem),linear-gradient(180deg,#070b14,#091323 50%,#060a12)}a{text-decoration:none;color:inherit}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}.top{position:sticky;top:0;z-index:10;background:rgba(7,11,20,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.1)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:13px;align-items:center;font-weight:900}.logo{width:43px;height:43px;border-radius:16px;background:linear-gradient(135deg,#67e8f9,#8ab4ff,#c4b5fd);box-shadow:0 18px 48px rgba(103,232,249,.24)}.brand small{display:block;color:#91a4ba;font-size:12px}.links{display:flex;gap:22px;color:#c7d4e2;font-size:14px}.hero{padding:92px 0 58px}.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}.tag{display:inline-flex;gap:9px;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(103,232,249,.1);border:1px solid rgba(103,232,249,.22);font-size:13px;font-weight:900}.pulse{width:8px;height:8px;border-radius:999px;background:#86efac;box-shadow:0 0 0 8px rgba(134,239,172,.12)}h1{font-size:clamp(46px,7vw,84px);line-height:.9;letter-spacing:-.075em;margin:18px 0 20px}.grad{background:linear-gradient(90deg,#fff,#a5f3fc 34%,#ddd6fe 92%);-webkit-background-clip:text;color:transparent}.lead{font-size:18px;line-height:1.85;color:#c3d0de}.btns{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{padding:13px 18px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);font-weight:850}.primary{background:linear-gradient(135deg,#67e8f9,#8ab4ff);color:#06101f;border:0}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}.metric,.card{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.045));border:1px solid rgba(255,255,255,.1);border-radius:26px;box-shadow:0 30px 90px rgba(0,0,0,.36)}.metric{padding:18px}.metric strong{display:block;font-size:30px}.metric span{font-size:13px;color:#a8b7ca}.console{overflow:hidden}.console-head{display:flex;justify-content:space-between;padding:18px 20px;border-bottom:1px solid rgba(255,255,255,.1)}.dots{display:flex;gap:8px}.dot{width:10px;height:10px;border-radius:999px}.dot:nth-child(1){background:#ff7b7b}.dot:nth-child(2){background:#ffd166}.dot:nth-child(3){background:#86efac}.console-body,.panel,.feature,.road{padding:22px}.badge{display:inline-block;padding:7px 10px;border-radius:999px;background:rgba(253,164,175,.11);border:1px solid rgba(253,164,175,.2);font-size:12px;font-weight:900;color:#ffd8de}.code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#07101a;border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:16px;color:#dce9fb;font-size:12.5px;line-height:1.72;white-space:pre-wrap;overflow:auto}.section{padding:46px 0}.section h2{font-size:44px;letter-spacing:-.055em;margin:0 0 10px}.section p{color:#b9c8d8;line-height:1.82}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}.workspace{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.info,.step,.row,.note{padding:14px;border-radius:16px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.07)}.info span{color:#9fafc2;font-size:13px}.timeline{display:grid;gap:12px}.step small{color:#67e8f9;font-weight:900;letter-spacing:.08em}.plus{color:#86efac}.minus{color:#fda4af}.table{display:grid;gap:10px;margin-top:18px}.row{display:grid;grid-template-columns:1.05fr .6fr .9fr;gap:10px;color:#d8e5f7;font-size:14px}.pill{display:inline-block;padding:5px 9px;border-radius:999px;background:rgba(103,232,249,.12);font-size:12px;font-weight:850}.roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}.road small{color:#67e8f9;font-weight:900}.footer{padding:62px 0;text-align:center;color:#8fa0b7}@media(max-width:900px){.grid,.cards,.workspace,.roadmap,.metrics,.info-grid{grid-template-columns:1fr}.links{display:none}.row{grid-template-columns:1fr}h1{font-size:52px}.section h2{font-size:34px}}
+</style>
+</head>
+<body>
+<header class="top"><nav class="wrap nav"><div class="brand"><span class="logo"></span><span>AuthMatrix Studio<small>AI Authorization Regression & Policy Test Workspace</small></span></div><div class="links"><a href="#cap">Capabilities</a><a href="#work">Workspace</a><a href="#patch">Patch</a><a href="#road">Roadmap</a></div></nav></header>
+<main>
+<section class="hero wrap"><div class="grid"><div><div class="tag"><span class="pulse"></span>AI agents for RBAC, ABAC, tenant boundaries and route guards</div><h1>Catch permission regressions before <span class="grad">they reach production</span>.</h1><p class="lead">AuthMatrix Studio 是一个面向 SaaS 产品和后端 API 的 AI 授权回归检测与策略修复工作台。它会读取路由处理器、OpenAPI、RBAC/ABAC 策略、权限矩阵、审计日志、测试用例和 PR diff，自动发现越权风险、租户隔离缺口、角色继承错误和策略覆盖不足，并生成可审查的修复 patch 与回归测试。</p><div class="btns"><a class="btn primary" href="#work">Open Policy Workspace</a><a class="btn" href="#patch">View Policy Patch</a></div><div class="metrics"><div class="metric"><strong>486</strong><span>路由与权限检查点已追踪</span></div><div class="metric"><strong>17</strong><span>高风险授权回归路径</span></div><div class="metric"><strong>8 agents</strong><span>建模、修复、测试、审查协作</span></div></div></div><div class="card console"><div class="console-head"><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><span style="color:#93a5ba;font-family:monospace">auth_run_7718</span></div><div class="console-body"><span class="badge">AUTH REGRESSION DETECTED</span><h3>Project viewer can export billing CSV after role refactor</h3><div class="code">Loaded context:
+- 132 API route handlers
+- 41 permission policy files
+- 9 OpenAPI route groups
+- 22 audit-log samples
+- 18 role matrix rows
+- 34 authorization tests
+- 7 recent PR diffs
+
+Policy Agent result:
+GET /api/billing/export requires billing.export in matrix
+but route guard only checks project.read after refactor.
+
+Risk:
+project viewer can trigger billing export across same tenant.
+
+Suggested remediation:
+route-level policy binding + tenant-scoped fixture + negative regression test</div></div></div></div></section>
+
+<section class="section wrap" id="cap"><h2>Designed for authorization changes that are hard to review manually.</h2><p>AuthMatrix 不只是扫描是否调用了 auth 函数，而是把路由、策略、角色继承、租户边界、审计日志和测试用例串成权限图，帮助团队发现真实业务路径中的授权回归。</p><div class="cards"><article class="card feature"><h3>Policy Graph Builder</h3><p>从路由、OpenAPI、策略文件和角色矩阵中构建权限关系图。</p></article><article class="card feature"><h3>Tenant Boundary Checks</h3><p>追踪 tenantId、orgId、projectId 在查询、缓存和导出任务中的传递。</p></article><article class="card feature"><h3>Negative Test Generation</h3><p>自动生成“应该被拒绝”的跨角色、跨租户、越权访问测试。</p></article><article class="card feature"><h3>Review-ready Reports</h3><p>输出风险路径、修复摘要、验证矩阵和权限变更审查说明。</p></article></div></section>
+
+<section class="section wrap" id="work"><h2>Authorization workspace demo.</h2><p>下面展示一次角色重构后 billing export 越权风险的检测。Agent 会先追踪权限矩阵和路由 guard，再生成策略绑定、测试 fixture 和验证报告。</p><div class="workspace"><section class="card panel"><h3>Regression Snapshot</h3><div class="info-grid"><div class="info"><strong>Service</strong><span>workspace-api</span></div><div class="info"><strong>Risk Surface</strong><span>billing export / tenant scoped data</span></div><div class="info"><strong>Routes Analyzed</strong><span>132 handlers / 9 route groups</span></div><div class="info"><strong>Primary Bug</strong><span>guard checks project.read only</span></div></div><div class="code" style="margin-top:16px">Policy Diff:
+Role: project_viewer
+expected:
+  - project.read
+  - issue.read
+denied:
+  - billing.read
+  - billing.export
+
+Route:
+GET /api/billing/export
+current guard:
+  requirePermission('project.read')
+
+Correct guard:
+  requirePermission('billing.export')
+  requireTenantScope(request.tenantId)</div><div class="note" style="margin-top:14px">目标是防御性授权工程：发现并修复访问控制回归，不包含绕过权限或利用步骤。</div></section><section class="card panel"><h3>Agent Timeline</h3><div class="timeline"><div class="step"><small>ROUTE AGENT</small><h4>Map API routes and guards</h4><p>读取路由处理器、OpenAPI 分组、middleware 和权限检查点。</p></div><div class="step"><small>POLICY AGENT</small><h4>Compare role matrix and policies</h4><p>对比 RBAC/ABAC 策略、角色继承和业务权限矩阵。</p></div><div class="step"><small>TENANT AGENT</small><h4>Trace tenant-scoped data flow</h4><p>检查 tenantId 在查询、导出、缓存和审计日志中的约束。</p></div><div class="step"><small>TEST AGENT</small><h4>Generate negative regression tests</h4><p>补充跨角色、跨租户、拒绝路径和审计日志验证测试。</p></div></div></section></div></section>
+
+<section class="section wrap" id="patch"><h2>Generated authorization patch.</h2><p>输出结果包含路由策略绑定、租户边界检查、负向测试、审计日志验证和 PR 审查说明。</p><div class="workspace"><section class="card panel"><h3>Policy Patch</h3><div class="code"><span class="minus">- router.get('/billing/export', requirePermission('project.read'), exportBillingCsv)</span>
+
+<span class="plus">+ router.get('/billing/export',</span>
+<span class="plus">+   requirePermission('billing.export'),</span>
+<span class="plus">+   requireTenantScope('tenantId'),</span>
+<span class="plus">+   auditDenied('billing.export'),</span>
+<span class="plus">+   exportBillingCsv</span>
+<span class="plus">+ )</span>
+
+<span class="plus">+ test('project viewer cannot export billing csv', async () => {</span>
+<span class="plus">+   const viewer = fixtureUser({ role: 'project_viewer' })</span>
+<span class="plus">+   await expect(api.as(viewer).get('/api/billing/export')).resolves.toHaveStatus(403)</span>
+<span class="plus">+ })</span></div></section><section class="card panel"><h3>Validation Matrix</h3><div class="table"><div class="row"><span>Viewer denied</span><span><span class="pill">PASS</span></span><span>403 returned for billing export</span></div><div class="row"><span>Billing admin allowed</span><span><span class="pill">PASS</span></span><span>own-tenant export succeeds</span></div><div class="row"><span>Cross-tenant fixture</span><span><span class="pill">PASS</span></span><span>tenant mismatch blocked</span></div><div class="row"><span>Audit log</span><span><span class="pill">READY</span></span><span>denied attempts recorded</span></div></div></section></div></section>
+
+<section class="section wrap" id="road"><h2>Evaluation roadmap.</h2><p>后续计划使用多个开源 SaaS 与后端项目验证权限图构建、角色矩阵对齐、租户边界检查、负向测试生成和 PR 报告能力。</p><div class="roadmap"><article class="card road"><small>Phase 01</small><h3>RBAC Regression Benchmark</h3><p>覆盖角色继承、权限重命名、路由漏 guard 和策略文件漂移。</p></article><article class="card road"><small>Phase 02</small><h3>Tenant Boundary Testing</h3><p>生成跨租户读取、导出、缓存、后台任务和审计日志测试。</p></article><article class="card road"><small>Phase 03</small><h3>Policy Review Reports</h3><p>输出权限变更证据、风险路径、修复摘要和验证矩阵。</p></article></div></section>
+</main><footer class="footer wrap">AuthMatrix Studio · AI Authorization Regression & Policy Test Workspace</footer>
+</body></html>
